@@ -1,0 +1,8 @@
+{
+  "name": "SchoolBridge",
+  "description": "A React + Firebase web app connecting schools and parents. Includes school onboarding, parent onboarding, and real-time feeds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

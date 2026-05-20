@@ -1,0 +1,45 @@
+{
+  "entities": {
+    "School": {
+      "title": "School",
+      "description": "School onboarding data",
+      "type": "object",
+      "properties": {
+        "ownerId": {
+          "type": "string",
+          "description": "UID of the user who owns this school profile"
+        },
+        "name": {
+          "type": "string"
+        },
+        "phoneNumbers": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "photos": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "step": {
+          "type": "number"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": ["ownerId", "name", "step"]
+    }
+  },
+  "firestore": {
+    "/schools/{schoolId}": {
+      "schema": { "$ref": "School" },
+      "description": "Store school onboarding data"
+    }
+  },
+  "storage": {
+    "rules": "rules_version = '2';\nservice firebase.storage {\n  match /b/{bucket}/o {\n    match /schools/{userId}/{allPaths=**} {\n      allow read: if true;\n      allow write: if request.auth != null && request.auth.uid == userId;\n    }\n    match /parents/{userId}/{allPaths=**} {\n      allow read: if true;\n      allow write: if request.auth != null && request.auth.uid == userId;\n    }\n    match /announcements/{allPaths=**} {\n      allow read: if true;\n      allow write: if request.auth != null;\n    }\n  }\n}"
+  }
+}

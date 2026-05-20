@@ -1,0 +1,33 @@
+{
+  "common": {
+    "welcome": "Welcome to SchoolBridge",
+    "school": "School",
+    "parent": "Parent",
+    "continue": "Continue",
+    "back": "Back",
+    "finish": "Finish",
+    "loading": "Loading...",
+    "email": "Email",
+    "password": "Password",
+    "role": "Role"
+  },
+  "landing": {
+    "tagline": "The Modern School Network",
+    "title": "Bridging the gap for Education.",
+    "description": "Choose your role to get started with the private communication platform connecting schools and parents.",
+    "im_a_school": "I'm a School",
+    "im_a_parent": "I'm a Parent",
+    "school_desc": "Register your institution, manage your staff, and publish official announcements to parents.",
+    "parent_desc": "Join your child's school community, follow updates, and track important notifications.",
+    "register_school": "Register as School",
+    "join_parent": "Join as Parent"
+  },
+  "auth": {
+    "sign_in": "Sign In",
+    "sign_up": "Sign Up",
+    "already_have_account": "Already have an account?",
+    "dont_have_account": "Don't have an account?",
+    "login": "Login",
+    "create_account": "Create Account"
+  }
+}

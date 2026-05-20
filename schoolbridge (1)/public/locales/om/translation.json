@@ -1,0 +1,33 @@
+{
+  "common": {
+    "welcome": "Baga gara SchoolBridge nagaan dhuftan",
+    "school": "Mana Barumsaa",
+    "parent": "Maatii",
+    "continue": "Itti fufi",
+    "back": "Gara duubaa",
+    "finish": "Xumuri",
+    "loading": "Hoofkoraa jira...",
+    "email": "Iimeeyilii",
+    "password": "Jecha iccitii",
+    "role": "Gahee"
+  },
+  "landing": {
+    "tagline": "Simbirroo Mana Barumsaa Ammayyaa",
+    "title": "Barumsaaf riqicha cehumsaa.",
+    "description": "Waltajjii qunnamtii dhuunfaa manneen barnootaa fi maatiiwwan walitti hidhu kana jalqabuuf gahee keessan filadhaa.",
+    "im_a_school": "Ani mana barumsaati",
+    "im_a_parent": "Ani maatiidha",
+    "school_desc": "Dhaabbata keessan galmeessaa, hojjettoota keessan bulchaa, fi beeksisa rasmicha maatiiwwaniif maxxansaa.",
+    "parent_desc": "Hawaasa mana barumsaa mucaa keessanii tahaa, hordofaa, fi beeksisa barbaachisoo argadhaa.",
+    "register_school": "Akka mana barumsaatti galmaa'i",
+    "join_parent": "Akka maatiitti tahi"
+  },
+  "auth": {
+    "sign_in": "Seeni",
+    "sign_up": "Galmeessi",
+    "already_have_account": "Duraan deebii qabduu?",
+    "dont_have_account": "Deebii hin qabduu?",
+    "login": "Seeni",
+    "create_account": "Deebii uumi"
+  }
+}

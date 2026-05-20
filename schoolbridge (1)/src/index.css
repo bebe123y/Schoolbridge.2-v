@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Shared Base colors */
+  --color-primary: var(--primary);
+  --color-bg: var(--background);
+  --color-fg: var(--foreground);
+}
+
+@layer base {
+  :root {
+    --primary: #4f46e5; /* indigo-600 */
+    --background: #ffffff;
+    --foreground: #111827; /* gray-900 */
+    --card: #f9fafb; /* gray-50 */
+    --border: #e5e7eb; /* gray-200 */
+  }
+
+  .dark {
+    --background: #0f172a; /* slate-900 */
+    --foreground: #f8fafc; /* slate-50 */
+    --card: #1e293b; /* slate-800 */
+    --border: #334155; /* slate-700 */
+  }
+
+  .glass {
+    --background: #f1f5f9;
+    --foreground: #0f172a;
+    --card: rgba(255, 255, 255, 0.4);
+    --border: rgba(255, 255, 255, 0.3);
+  }
+
+  .dark.glass {
+    --background: #020617;
+    --foreground: #f8fafc;
+    --card: rgba(15, 23, 42, 0.4);
+    --border: rgba(255, 255, 255, 0.1);
+  }
+
+  body {
+    @apply antialiased transition-colors duration-300;
+    color: var(--foreground);
+    background-color: var(--background);
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply backdrop-blur-md border border-[var(--border)] bg-[var(--card)] shadow-xl;
+  }
+  
+  .glass-header {
+    @apply backdrop-blur-lg border-b border-[var(--border)] bg-[var(--card)]/80;
+  }
+}
+
+/* Custom scrollbar for better look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-200 rounded-full hover:bg-gray-300 transition dark:bg-slate-700;
+}
